@@ -40,6 +40,7 @@
     margin-right: 5px;
     border-radius: 5px;
     text-transform: capitalize;
+    font-size: 20px;
 }
 
 .data {
@@ -101,23 +102,31 @@
     background-color: rgb(168, 36, 36);
     border: none;
     border-radius: 15px;
+    font-size: 20px;
+}
+
+.data .habilidad-pokemon {
+    display: flex;
+    background-color: green;
+    
+    justify-content: center;
+    align-items: center;
 }
 
 .habilidad-pokemon {
     font-weight: 400;
     font-size: 20px;
-    background-color: green;
     border-radius: 15px;
     padding: 2px 3px 3px 8px;
-    margin: 5px;
-    width: auto;
+    margin-right: 24px;
+    margin-top: 5px;
     text-align: center;
     list-style: none;
 
 }
 
 
-@media (max-width: 1216px) {
+@media (width<= 1262px) {
     .modal-body {
         max-height: 70vh;
         width: 85%;
@@ -140,12 +149,13 @@
         height: 16rem;
     }
 
-    .data{
+    .data {
         align-items: center;
         justify-content: center;
         text-align: center;
     }
-    .habilidad-pokemon{
+
+    .habilidad-pokemon {
         display: flex;
         justify-content: center;
         text-align: center;
