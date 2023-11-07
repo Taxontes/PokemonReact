@@ -1,0 +1,70 @@
+[data-tema="light"] {
+    background-color: #ffffff;
+}
+
+
+[data-tema="dark"] {
+    background-color: #333333;
+}
+
+[data-tema="light"] .card {
+    background-color: #ffffff;
+}
+
+
+[data-tema="dark"] .card {
+    background-color: #888888;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+[data-tema="dark"] .input-buscar {
+    background-color: #888888;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+
+}
+
+[data-tema="dark"] .titulo-buscador {
+    color: #fff;
+}
+
+[data-tema="dark"] .input-buscar::placeholder {
+    color: #fff;
+    ;
+
+}
+
+[data-tema="dark"] .btn-mostrar>button {
+    color: #fff;
+
+
+}
+
+[data-tema="light"] .modal-body {
+    background-color: #efefef;
+    color: black;
+
+
+}
+
+[data-tema="light"] .titulo {
+
+    color: black;
+
+
+}
+
+[data-tema="light"] .titulo-seccion {
+
+    color: black;
+
+
+}
+
+[data-tema="dark"] .iluminacion>label>span {
+
+    background-color: black;
+
+
+}
