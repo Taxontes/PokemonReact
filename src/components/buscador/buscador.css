@@ -41,3 +41,10 @@
     font-size: 16px;
     transition: 0.4s;
 }
+
+@media(width <= 990px){
+    .titulo-buscador{
+        margin-top: 160px;
+
+    }
+}
