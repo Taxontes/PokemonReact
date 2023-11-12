@@ -1,0 +1,10 @@
+.contenedor{
+    background-color: burlywood;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+

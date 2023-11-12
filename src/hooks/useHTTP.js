@@ -43,6 +43,7 @@ export const useHTTP = () => {
           types,
           stats,
           abilities,
+          order:poke.order
         };
       });
 
