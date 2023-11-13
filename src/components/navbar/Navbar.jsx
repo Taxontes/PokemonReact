@@ -2,8 +2,12 @@ import React from 'react'
 import {  Logo, MiIconoSVG, ColorSun } from '../Icons'
 import './navbar.css'
 import { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+import { NavLink,Outlet } from 'react-router-dom'
+
+
+
+
+
 
 export const Navbar = () => {
 
@@ -43,6 +47,7 @@ export const Navbar = () => {
           <MiIconoSVG></MiIconoSVG>
         </div>
       </nav>
+      <Outlet/>
     </>
   )
 }
