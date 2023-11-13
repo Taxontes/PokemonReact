@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const EquipoPokemon = () => {
+const EquipoPokemon = () => {
   return (
       <>
           EquipoPokemon <br />
@@ -26,3 +26,4 @@ export const EquipoPokemon = () => {
       </>
   )
 }
+export default EquipoPokemon

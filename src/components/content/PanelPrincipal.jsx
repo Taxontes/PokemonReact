@@ -11,7 +11,7 @@ import { url } from '../../helpers/costantes'
 import { useSortList } from '../../hooks/useSortList'
 
 
-export const PanelPrincipal = () => {
+const PanelPrincipal = () => {
 
     const { error, data, isLoading, mostrarSiguientesPoke } = useHTTP(url)
 
@@ -72,3 +72,5 @@ export const PanelPrincipal = () => {
         </>
     )
 }
+
+export default PanelPrincipal
