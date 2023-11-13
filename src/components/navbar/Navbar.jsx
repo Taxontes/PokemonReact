@@ -21,13 +21,13 @@ export const Navbar = () => {
       <nav className={`navbar navbar-expand-lg ${tema === 'dark' ? 'navbar-light bg-light' : ' navbar-dark bg-dark'} fixed-top`}>
         <Logo></Logo>
         <div className="container-fluid">
-          <Link to="/" className="navbar-brand" >Inicio</Link>
+          <NavLink to="/" className="navbar-brand" >Inicio</NavLink>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <NavLink to="/pokedex" className="nav-link active" aria-current="page" >Pokédex</NavLink>
+              <NavLink to="/pokedex" className="nav-link" aria-current="page" >Pokédex</NavLink>
               <NavLink to="/favoritos" className="nav-link">Favoritos</NavLink>
               <NavLink to="/combate" className="nav-link">Combates</NavLink>
               <NavLink to="/minijuego" className="nav-link" >Mini Juego</NavLink>
