@@ -2,6 +2,8 @@ import React from 'react'
 import {  Logo, MiIconoSVG, ColorSun } from '../Icons'
 import './navbar.css'
 import { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
 
@@ -19,16 +21,16 @@ export const Navbar = () => {
       <nav className={`navbar navbar-expand-lg ${tema === 'dark' ? 'navbar-light bg-light' : ' navbar-dark bg-dark'} fixed-top`}>
         <Logo></Logo>
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">Navbar</a>
+          <Link to="/" className="navbar-brand" >Inicio</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
-              <a className="nav-link" href="#">Features</a>
-              <a className="nav-link" href="#">Pricing</a>
-              <a className="nav-link " aria-disabled="true">Disabled</a>
+              <NavLink to="/pokedex" className="nav-link active" aria-current="page" >Pokédex</NavLink>
+              <NavLink to="/favoritos" className="nav-link">Favoritos</NavLink>
+              <NavLink to="/combate" className="nav-link">Combates</NavLink>
+              <NavLink to="/minijuego" className="nav-link" >Mini Juego</NavLink>
             </div>
           </div>
         </div>
