@@ -1,0 +1,39 @@
+.contenedor-favorito {
+    background-image: url('/fondoPrincipal.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.informacion-favorito {
+    background-image: url('/body_bg.png');
+    background-size: cover;
+    height: 100%;
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.informacion-favorito>h1 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    margin-top: 140px;
+    font-size: 3rem;
+}
+
+.informacion-favorito>img {
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+@media screen and (width< 430px) {
+    .informacion>h1 {
+        font-size: 1.5rem;
+    }
+}
