@@ -5,7 +5,8 @@
   background-color: #ffffff;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
- 
+  background-image: url('/container_bg.png');
+  height: 100%;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

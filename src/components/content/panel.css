@@ -1,5 +1,6 @@
 body{
     background-image: url('/container_bg.png');
+    height: 100%;
 }
 .container{
    
