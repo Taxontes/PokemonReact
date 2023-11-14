@@ -21,13 +21,13 @@ body {
    
 }
 
-.img-notFound{
+/* .img-notFound{
 transition: transform 0.5s ease-in-out;
 }
 
 .img-notFound:hover{
 transform: scale(1.1);
-}
+} */
 h1, h3{
     color: #262626;
 }
