@@ -1,5 +1,6 @@
 //url de la api que trae la informacion
 export const url = "https://pokeapi.co/api/v2/pokemon?limit=15&offset=0";
+export const urlSearch = "https://pokeapi.co/api/v2/pokemon/ditto";
 //Resultados del combobox
 export const orden_por_tipo = "Tipo";
 export const orden_A_Z = "A-Z";
