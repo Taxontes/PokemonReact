@@ -12,6 +12,7 @@ body{
 }
 
 .card{
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,10 +20,10 @@ body{
     box-shadow: 3px 3px 5px 2px #333;
     height: auto;
     text-align: center;
-    transition: transform 0.15s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 .card:hover {
-    transform: rotate(3deg);
+    transform: scale(1.1);
 }
 .card img {
   max-width: 100%;
@@ -67,6 +68,12 @@ body{
     padding: 5px 10px 7px 10px;
     color: black;
     border: none;
+}
+.container-useSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 

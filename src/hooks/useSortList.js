@@ -7,7 +7,7 @@ import {
   numerico_descendente,
 } from "../helpers/costantes";
 
-export const useSortList = ({ data, seleccionOrden, busqueda }) => {
+export const useSortList = ({ data, seleccionOrden}) => {
   
   const sortedPokemonFunctions = useSort({ data });
   let sortedPokemonList = [...data];
@@ -22,11 +22,7 @@ export const useSortList = ({ data, seleccionOrden, busqueda }) => {
 
   sortedPokemonList = sortOptions[seleccionOrden] || sortedPokemonList;
 
-   if (busqueda.length > 0) {
-       sortedPokemonList = sortedPokemonList.filter((item) =>
-           item.name.toLowerCase().includes(busqueda.toLowerCase())
-       );
-   }
+  
 
   return sortedPokemonList;
 };

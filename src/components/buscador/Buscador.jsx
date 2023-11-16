@@ -1,14 +1,11 @@
 import React from 'react'
-import { BuscarIcon } from '../Icons'
 import './buscador.css'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 export const Buscador = ({ onFormSubmit }) => {
 
     const [pokemon, setPokemon] = useState('')
     
-   
-
     const onInputChange = (e) => {
         setPokemon(e.target.value);
     };
@@ -16,6 +13,7 @@ export const Buscador = ({ onFormSubmit }) => {
     const handleFormSubmit = (e) => {
         e.preventDefault(); // Evitar el envío automático del formulario
         onFormSubmit(pokemon);
+        
     };
   
 

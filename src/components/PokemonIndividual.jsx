@@ -16,7 +16,7 @@ export function PokemonIndividual({ id, name, img, types, stats }) {
                     <h3 className="titulo-seccion">Estadísticas</h3>
                     <div className='stats'>
                         {stats?.map(stat =>
-                            <section>
+                            <section key={stat.name}>
                                 <span className='puntos'>{stat.base_stat}</span>
                                 <span>{stat.name}</span>
                             </section>
