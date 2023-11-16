@@ -3,33 +3,37 @@ import { BuscarIcon } from '../Icons'
 import './buscador.css'
 import { useEffect, useState } from 'react'
 
-export const Buscador = ({ onInputChange }) => {
+export const Buscador = ({ onFormSubmit }) => {
 
     const [pokemon, setPokemon] = useState('')
     
    
 
-    useEffect(() => {
+    const onInputChange = (e) => {
+        setPokemon(e.target.value);
+    };
 
-        onInputChange(pokemon)
-
-    }, [pokemon])
-
+    const handleFormSubmit = (e) => {
+        e.preventDefault(); // Evitar el envío automático del formulario
+        onFormSubmit(pokemon);
+    };
+  
 
 
     return (
         <>
             <h3 className='titulo-buscador'>Encuentra el pokémon que buscas</h3>
 
-            <form className='container-buscador' >
+            <form className='container-buscador' onSubmit={handleFormSubmit}>
                 <input
                     type="text"
                     className='input-buscar'
                     placeholder='Encuentralo aquí'
-                    onChange={(e) => setPokemon(e.target.value)}
+                    onChange={onInputChange}
+                    value={pokemon}
 
                 />
-
+                <button type='submit' className="search-button">🔍</button>
             </form>
            
         </>

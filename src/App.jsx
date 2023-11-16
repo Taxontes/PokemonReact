@@ -11,6 +11,7 @@ const MiniJuego = lazy(() => import('./pages/miniJuego/MiniJuego'))
 const NotFound = lazy(() => import('./pages/notFound/NotFound'))
 const PanelPrincipal = lazy(() => import('./components/content/PanelPrincipal'))
 
+
 function App() {
 
   return (
