@@ -1,5 +1,3 @@
-
-
 export function PokemonIndividual({ id, name, img, types, stats }) {
     return (
         <div  className="card">
